@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approved Faculty's"
+        android:textAlignment="center"
+        android:textColor="#2cb103"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvApprovedFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:divider="#228709"
+        android:dividerHeight="2dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Faculty's"
+        android:textAlignment="center"
+        android:textColor="#eff707"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvPendingFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:divider="#fae330"
+        android:dividerHeight="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancle HOD's"
+        android:textAlignment="center"
+        android:textColor="#fc0314"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvCancleFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:divider="#ff1c32"
+        android:dividerHeight="2dp"/>
+</LinearLayout>

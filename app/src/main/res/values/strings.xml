@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">LeaveManagemantSysem</string>
+    <array name="type">
+
+        <item>Select</item>
+        <item>Admin</item>
+        <item>Principal</item>
+        <item>Head Of Department</item>
+        <item>Faculty</item>
+    </array>
+
+
+    <array name="loginType">
+
+        <item>Select</item>
+        <item>Principal</item>
+        <item>Head Of Department</item>
+        <item>Faculty</item>
+    </array>
+
+    <array name="leaveReason">
+
+        <item>Select Leave Reason</item>
+        <item>Casual Leave</item>
+        <item>Duty Leave</item>
+        <item>Sick Leave</item>
+        <item>Leave Without Pay</item>
+        <item>Medical Leave</item>
+        <item>Half Casual Leave</item>
+        <item>Half Leave</item>
+        <item>Exchange Leave</item>
+    </array>
+
+    <array name="department">
+        <item>Select Department</item>
+        <item>Computer Science</item>
+        <item>Electronics and Communication</item>
+        <item>Civil Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Fashion and Apparel Design</item>
+        <item>Bio-Technology</item>
+        <item>Bio Chemical Engineering</item>
+        <item>Agriculture</item>
+        <item>Mechanical Engineering</item>
+    </array>
+    <array name="selectLeave">
+        <item>Select Leave type</item>
+        <item>Pending Leave</item>
+        <item>Approve Leave</item>
+        <item>Cancel Leave</item>
+    </array>
+
+    <string name="msg">\n\nSorry !\n\n Your  Registration is Pending.\n</string>
+
+</resources>
+

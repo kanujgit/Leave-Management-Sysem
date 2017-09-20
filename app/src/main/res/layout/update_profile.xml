@@ -1,0 +1,181 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/d_p_img"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/login"
+            app:civ_border_width="0dp"
+            android:onClick="openCamra"/>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <EditText android:id="@+id/det_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/text_color"
+                android:hint="User Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:passwordToggleEnabled="true">
+            <EditText android:id="@+id/det_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPassword"
+                android:textColor="@color/text_color"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/det_repass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color"
+                android:hint="Re-Enter Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_gender"
+            android:orientation="horizontal"
+            android:layout_marginLeft="60dp">
+            <RadioButton
+                android:id="@+id/d_gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_gender_female"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Fe-Male"/>
+
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <EditText android:id="@+id/det_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/text_color"
+                android:maxLength="10"
+                android:hint="Contect No"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <EditText android:id="@+id/det_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/text_color"
+                android:hint="Qualification"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <EditText android:id="@+id/det_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/text_color"
+                android:hint="Experience"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/update_b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_margin="5dp"
+                    android:background="@color/button_color"
+                    android:textColor="@color/text_color"
+                    android:ems="10"
+                    android:onClick="update"/>
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:id="@+id/update_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_margin="5dp"
+                android:background="@color/button_color"
+                android:textColor="@color/text_color"
+                android:ems="10"
+                android:onClick="reset"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>

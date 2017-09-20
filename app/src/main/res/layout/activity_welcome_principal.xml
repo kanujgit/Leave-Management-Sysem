@@ -1,0 +1,64 @@
+<LinearLayout android:id="@+id/adminLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/login"
+        app:civ_border_width="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textviewUser"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_marginBottom="60dp"/>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:onClick="viewHodP"
+        android:text="View HOD"
+        android:textColor="@color/text_color" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="View Faculty"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color"
+        android:onClick="viewFacultyP"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="View Leave Application"
+        android:textAllCaps="false"
+        android:background="@color/button_color"
+        android:textColor="@color/text_color"
+        android:onClick="viewLeaveApp"
+        />
+</LinearLayout>

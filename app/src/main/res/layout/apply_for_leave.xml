@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Details"
+            android:textColor="@color/text_color"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome"
+            android:textSize="25dp"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:id="@+id/sp1leave_reason"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/department"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/sp2leave_reason"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/leaveReason"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/et_leave_reason"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Reason For  Leave "
+            android:inputType="textMultiLine"
+            android:lines="3"
+             />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b1_leavefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Date From"
+                android:textSize="11sp"
+                android:ems="8"
+                android:textAllCaps="false"
+                android:background="@color/button_color"
+                android:textColor="@color/text_color"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv1_leavefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/00"
+                android:textSize="15sp"
+                android:layout_marginLeft="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b2_leaveto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Date To"
+                android:textSize="11sp"
+                android:ems="8"
+                android:textAllCaps="false"
+                android:background="@color/button_color"
+                android:textColor="@color/text_color"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv2_leaveto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/00"
+                android:layout_marginStart="45dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="35dp"/>
+        </LinearLayout>
+
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/et_leavefrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Leave From"
+                android:inputType="date"
+                 />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/et_leaveto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Leave To"
+                android:inputType="date" />
+
+        </android.support.design.widget.TextInputLayout>-->
+
+
+        <android.support.v7.widget.AppCompatButton
+
+            android:layout_gravity="center"
+            android:id="@+id/leave_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:background="@color/button_color"
+            android:textColor="@color/text_color"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:onClick="leaveSubmit"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

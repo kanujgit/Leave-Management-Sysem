@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/d_p_img"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/login"
+        app:civ_border_width="0dp"
+        android:onClick="openCamra"/>
+
+    <TextView
+        android:id="@+id/d_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:ems="40"
+        android:text="Name"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/d_con"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Contect No"
+        android:ems="40"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <TextView
+    android:id="@+id/d_email"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:text="Email "
+        android:ems="40"
+    android:textColor="@color/text_color"
+    android:textSize="20sp" />
+    <TextView
+        android:id="@+id/d_gender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Gender"
+        android:ems="40"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/d_quali"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Qualification"
+        android:textColor="@color/text_color"
+        android:ems="40"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/sp_dept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:entries="@array/department" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/right" />
+
+        <ImageButton
+
+            android:id="@+id/btn_wrong"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/wrong" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
